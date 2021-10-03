@@ -1,29 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Variant 20, linear layout -->
+<?xml version="1.0" encoding="utf-8"?><!-- Variant 20, linear layout -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <Button
         android:layout_width="250dp"
-        android:layout_weight="1"
         android:layout_height="0dp"
-        />
-    <ImageView
-        android:layout_width="250dp"
         android:layout_weight="1"
+        android:layout_gravity="start" />
+    <LinearLayout
         android:layout_height="0dp"
-        android:src="@drawable/ic_launcher_foreground"
-        android:layout_marginStart="100dp"
-        android:contentDescription="@string/example"
-        android:layout_marginLeft="100dp" />
+        android:layout_width="match_parent"
+        android:layout_weight="1" >
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="@string/example" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
     <TextView
         android:layout_width="250dp"
-        android:layout_weight="1"
         android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="start"
         android:text="@string/hello_world"
         android:textColor="@color/black"
         android:textSize="40sp"
-        android:gravity="center"
-        />
+        android:gravity="center" />
 </LinearLayout>
