@@ -10,7 +10,7 @@
         android:id="@+id/button4"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@id/imageView4"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -19,7 +19,7 @@
         android:layout_height="match_parent"
         android:contentDescription="@string/example"
         android:src="@drawable/ic_launcher_foreground"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@id/textView4"
         tools:layout_width="50dp" />
 
     <TextView
